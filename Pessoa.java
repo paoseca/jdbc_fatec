@@ -7,13 +7,18 @@ public class Pessoa {
   public Pessoa(){}
 
   public Pessoa(String nome, String fone, String email){
+    this(0, nome, fone, email); // chamando o construtor com 4 parametros com codigo zerado pq o codigo ja foi inicializado por ser instancia
+  }
+
+  public Pessoa(int codigo, String nome, String fone, String email){
+    setCodigo(codigo);
     setNome(nome);
     setFone(fone);
     setEmail(email);
-  }
+}
   
   public Pessoa(int codigo){
-    setCodigo(codigo);
+    this(codigo, null, null, null); //null é um valor padrão para variaveis de referencia
   }
   
   public int getCodigo() {

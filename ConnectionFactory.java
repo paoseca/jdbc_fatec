@@ -6,7 +6,7 @@ public class ConnectionFactory {
     String port = "5432";
     String db = "20231_ipi_poo_pessoas";
     String user = "postgres";
-    String password = "postgres";
+    String password = "123456";
     String stringDeConexao = String.format(
       "jdbc:postgresql://%s:%s/%s",
       host, port, db
